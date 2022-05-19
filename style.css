@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  background-color: hsl(226, 43%, 10%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  font-family: "Inconsolata", monospace;
+}
+.container {
+  width: 67rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.2rem;
+  gap: 1.2rem;
+}
+.left-side {
+  height: 29rem;
+}
+.main {
+  height: 100%;
+}
+.user-content {
+  background-color: hsl(246, 80%, 60%);
+  height: 65%;
+  padding: 1.2rem;
+}
+.user-content > p {
+  font-weight: 300;
+}
+.user-name {
+  font-size: 2.5rem;
+}
+.bottom-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.8rem;
+  height: 35%;
+}
+.user-image {
+  width: 4.5rem;
+  border: 3px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  margin-bottom: 1.8rem;
+}
+.btn {
+  color: hsl(235, 45%, 61%);
+  width: 50%;
+  background-color: lightgray;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 1.1rem;
+}
+.btn:hover {
+  background-color: orangered;
+  color: #f4f4f4;
+  transform: scale(1.1);
+  height: 25px;
+  width: 90px;
+}
+.weekly {
+  color: aliceblue;
+}
+.right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+section {
+  position: relative;
+  height: 14rem;
+  width: 15rem;
+  overflow: hidden;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+.icon {
+  position: absolute;
+  top: -0.4rem;
+  right: 1rem;
+}
+h4 {
+  font-weight: 400;
+}
+.info {
+  position: absolute;
+  bottom: 0;
+  height: 80%;
+  width: 100%;
+  padding: 1.8rem;
+}
+.hours {
+  font-size: 3.2rem;
+  font-weight: 300;
+  margin-bottom: 0.5rem;
+  color: hsl(0, 0%, 100%);
+}
+.recent {
+  color: hsl(236, 100%, 87%);
+  font-size: 0.9rem;
+}
+.main,
+.info {
+  background-color: hsl(235, 46%, 20%);
+}
+.work {
+  background-color: hsl(15, 100%, 70%);
+}
+.play {
+  background-color: hsl(195, 74%, 62%);
+}
+.study {
+  background-color: hsl(348, 100%, 68%);
+}
+.exercise {
+  background-color: hsl(145, 58%, 55%);
+}
+.social {
+  background-color: hsl(264, 64%, 52%);
+}
+.selfcare {
+  background-color: hsl(43, 84%, 65%);
+}
+@media (max-width: 1060px) {
+  .container {
+    width: 50rem;
+  }
+}
+@media (max-width: 810px) {
+  .container {
+    width: 34rem;
+  }
+}
+@media (max-width: 530px) {
+  .container {
+    width: 22rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .user-image {
+    float: left;
+    margin-right: 1.5rem;
+    margin-bottom: 0;
+  }
+  .report {
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    line-height: 2;
+  }
+  .user-name {
+    font-size: 1.5rem;
+  }
+  .user-content {
+    overflow: auto;
+  }
+  .user-content > p,
+  main > p {
+    display: inline-block;
+  }
+  .bottom-btn {
+    flex-direction: row;
+    padding: 1.5rem;
+  }
+
+  .left-side {
+    height: auto;
+  }
+  section {
+    width: 20rem;
+    height: 13rem;
+  }
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .info {
+    height: auto;
+  }
+  .hours {
+    font-size: 2.5rem;
+  }
+}
